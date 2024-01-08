@@ -1,0 +1,89 @@
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 800px;
+        flex-direction: column;
+        background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(127, 200, 255), rgb(127, 200, 255), white);
+    }
+    
+    #logo {
+        cursor: pointer;
+        height: 150px;
+    }
+
+    #capBoard {
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+        grid-template-rows: repeat(8, auto);
+        gap: 0px 0px 0px 0px;
+        background-color: #E6DA00;
+        padding: 10px;
+        width: 600px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #details {
+        justify-content: space-around;
+        width: 600px;
+    }
+
+    div div {
+        font-size: 30px;
+    }
+
+
+    @keyframes winning {
+        0% {
+            font-size: 20px;
+            color: #FF2600;
+        }
+
+        25% {
+            color: #A9D38E;
+        }
+
+        50% {
+            color: #008000;
+        }
+
+        75% {
+            font-size: 200px;
+            color: #E6DA00;
+        }
+
+        100% {
+            font-size: 20px;
+            color: #FF2600;
+        }
+    }
+
+    p {
+        display: none;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 200px;
+        font-weight: bold;
+        animation: winning 5s linear infinite;
+        position: absolute;
+        top: 150px;
+    }
+
+    .music {
+        font-size: 40px;
+        position: absolute;
+        top: 3%;
+        left: 2%;
+        transition: transform 0.2s;
+
+    }
+
+    .music:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }

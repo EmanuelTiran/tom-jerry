@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/games.css" />
+</head>
+
+<body>
+    <p id="win"></p>
+    <p id="lost">The time is over</p>
+    <img id="logo" src="images/תום וג'רי.png" alt="">
+    <div id="details">
+        <div>🕒</div>
+        <div>:</div>
+        <h1 id="h1"></h1>
+        <div>|</div>
+        <div>💨</div>
+        <div>:</div>
+        <h1 id="h2">60</h1>
+        <div>|</div>
+        <div>🧔</div>
+        <div>:</div>
+        <h1 id="h3"></h1>
+
+    </div>
+    <div class="music" id="mute" onmousedown="mute()">🔊</div>
+    <div class="music" id="sound" onclick="sound()">🔈</div>
+    <img id="cat" height="100px" src="images/Tom.png">
+    <img id="mouse" onmousedown="mDown(this)" height="70px" src="images/Jerry.png">
+</body>
+<script src="js/maingame.js"></script>
+<script src="js/tomComputer.js"></script>
+
+</html>

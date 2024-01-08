@@ -1,0 +1,99 @@
+body {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#contiener {
+    width: 1000px;
+    height: 800px;
+    text-align: center;
+    margin: auto;
+    background-image: url(/images/background.png);
+    background-position: center top;
+    display: block;
+    border: 2px solid;
+    position: relative;
+    transform-origin: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid rgba(255, 0, 0, 0.659);
+
+}
+
+div div {
+    /*פסאודו לעיצוב הFORM*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid rgba(255, 0, 0, 0.443);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+button {
+    width: 150px;
+    height: 70px;
+    font-size: 17px;
+    background-color: rgb(8, 63, 141, 0.7);
+    border-radius: 8px;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    color: antiquewhite;
+    margin: 2px;
+    cursor: pointer;
+}
+
+button::placeholder {
+    color: black;
+}
+
+input {
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 8px;
+    margin: 0;
+    opacity: 0.7;
+    margin: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*הטקסט הפנימי של הINPUT*/
+input::placeholder {
+    color: black;
+    text-align: center;
+    opacity: 150%;
+}
+
+img {
+    position: absolute;
+    right: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*להתאים בצורה ריספונסיבית לנייד*/
+    #contiener {
+        width: 320px;
+        height: 520px;
+        font-size: 20px;
+    }
+}
